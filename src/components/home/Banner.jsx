@@ -24,7 +24,13 @@ export default function Banner() {
             {({isVisible}) =>
             <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
               <h1>WELCOME TO MY PLACE</h1>
-              <span className="tagline">SEE MORE BELOW <br /><CaretDownFill size={70} /></span>
+                <a href="#more">
+              <button className="tagline-btn">
+                SEE MORE BELOW <CaretDownFill size={50} />
+                <span aria-hidden class="tagline-btn__glitch">SEE MORE BELOW </span>
+                {/* <span aria-hidden class="tagline-btn__tag">R25</span> */}
+              </button>
+                </a>
               <p>I’m a Illustrator, Graphic Designer, <br></br> and a Junior Front-End Web Developer</p>
             </div>
             }

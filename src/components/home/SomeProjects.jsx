@@ -35,7 +35,7 @@ export default function SomeProjects() {
       <Row>
         <Col>
           <div className="skill-bx">
-            <h2>
+            <h2 id="more">
               SOME OF PROJECTS
             </h2>
             <Carousel
@@ -86,7 +86,10 @@ export default function SomeProjects() {
                 <img src={meter6} alt="Image" />
               </div>
             </Carousel>
-            <button className="more-btn">MORE PROJECT</button>
+            <button className="more-btn tagline-btn">
+              <span className="more-s">MORE PROJECT</span>
+              <span aria-hidden class="tagline-btn__glitch">MORE</span>
+            </button>
           </div>
         </Col>
       </Row>
